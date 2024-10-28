@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form - Culinary Festival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Culinary Festival</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About the Event</a></li>
+                <li><a href="#form">Sign Up Form</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <article>
+            <header>
+                <h3 class="titleab">About the Culinary Festival</h3>
+            </header>
+            <details>
+                <img src="assets/Taste_Sydney_970x540.jpg" alt="Culinary Festival Image">
+                <summary>Learn More about the Culinary Festival</summary>
+                <p>The Culinary Festival is an exciting event for food lovers, offering <mark>cooking demos</mark>,
+                    <mark>workshops</mark>, and <mark>tasting sessions</mark>. Whether you're a professional or just
+                    starting out, there's something for everyone to learn and enjoy. You'll have the chance to see
+                    live demonstrations by renowned chefs, learn cooking techniques, and even get a taste of unique
+                    and international dishes.
+                </p>
+                <p>At the <strong>Culinary Festival</strong>, we aim to bring together people who share a passion
+                    for food, cooking, and learning new skills. This year’s event is packed with activities designed
+                    to inspire both beginners and seasoned chefs. Explore the world of gastronomy through immersive
+                    workshops that cover everything from the basics of kitchen safety to advanced plating
+                    techniques.</p>
+            </details>
+        </article>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h1>Sign Up Form</h1>
+        <details>
+            <summary>Sign Up Form Details</summary>
+            <form>
+                <caption>Personal Information</caption>
+                <div class="nama">
+                    <td>Full Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="full_name" required placeholder="Nama Lengkap"></td>
+                </div>
+                <div class="Email"></div>
+                    <td>Email Address</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" required placeholder="nama@gmail.com"></td>
+                </div>
+                <div class="phone">
+                    <td>Phone Number</td>
+                    <td>:</td>
+                    <td><input type="tel" name="phone" required placeholder="08123456789"></td>
+                </div>
+                <div class="date">
+                    <td>Date of Birth</td>
+                    <td>:</td>
+                    <td><input type="date" name="dob_day" required></td>
+                </div>
+                <div class="tickets">
+                    <td>Ticket Type</td>
+                    <td>:</td>
+                    <td>
+                        <select name="ticket_type" id="ticket_type" required>
+                            <option value="general">General</option>
+                            <option value="family">Family</option>
+                            <option value="student">Student</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </td>
+                </div>
+                <div class="numtik">
+                    <td>Number of Tickets</td>
+                    <td>:</td>
+                    <td><input type="number" name="num_tickets" required></td>
+                </div>
+                <div class="pay">
+                    <td>Payment Method</td>
+                    <td>:</td>
+                    <td>
+                        <select name="payment_method" required>
+                            <option value="cash">Cash</option>
+                            <option value="qr">QR Code</option>
+                            <option value="trf">Bank divansfer</option>
+                        </select>
+                    </td>
+                </div>
+            </form>
+            <input type="submit" value="Submit">
+        </details>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h3>Media Highlights</h3>
+        <audio controls>
+            <source src="assets/54321-35890.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+            <source src="assets/198866-908874705_tiny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <section id="contact">
+            <p>Contact Us: info@culinaryfestival.com</p>
+            <p>Follow us on social media!</p>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/culinaryfestival">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/culinaryfestival">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/culinaryfestival">Twitter</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Culinary Festival. All Rights Reserved.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
