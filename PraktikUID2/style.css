@@ -1,0 +1,116 @@
+    /* Header */
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: rgb(172, 222, 255);
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .header-menu a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Produk Terbaru */
+    .new-products-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        background-color: #f7f7f7;
+    }
+
+    .new-products-column {
+        width: 100%;
+    }
+
+    .new-product-item {
+        overflow: hidden;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: white;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .new-product-item img {
+        float: left;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .new-product-name,
+    .new-product-price {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    /* Produk Promo */
+    .promo-section {
+        padding: 20px 0;
+        background-color: #F0FFFF;
+    }
+
+    .promo-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .product {
+        text-align: center;
+        padding: 10px;
+        background-color: #00FFFF;
+        border-radius: 5px;
+    }
+
+    .product img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Responsive Promo Grid */
+    @media (max-width: 1024px) {
+        .promo-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .promo-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Keranjang */
+    #keranjang {
+        padding: 20px 0;
+        background-color: #f7f7f7;
+    }
+
+    /* Footer */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: navy;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
