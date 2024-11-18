@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mencoba Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <!-- Navbar -->
+  <div class="bg-blue-600 p-4 text-white flex justify-between">
+    <a href="#" class="text-lg font-bold">D3SI-47-01 Site</a>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container mx-auto my-10 text-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di Kelas D3-SI-47-01</h1>
+    <p class="text-gray-600 mb-6">Framework CSS berbasis utility-first yang cepat dan fleksibel.</p>
+    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pelajari Lebih Lanjut</a>
+  </div>
+
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-white shadow-md rounded p-4">
+      <h2 class="text-xl font-bold mb-2">Keunggulan 1</h2>
+      <p class="text-gray-600">Tailwind memungkinkan desain cepat dengan utility classes.</p>
+    </div>
+    <div class="bg-white shadow-md rounded p-4">
+      <h2 class="text-xl font-bold mb-2">Keunggulan 2</h2>
+      <p class="text-gray-600">Mudah dikustomisasi untuk berbagai kebutuhan proyek.</p>
+    </div>
+    <div class="bg-white shadow-md rounded p-4">
+      <h2 class="text-xl font-bold mb-2">Keunggulan 3</h2>
+      <p class="text-gray-600">Responsif dengan kelas bawaan yang mudah digunakan.</p>
+      <label class="inline-flex items-center">
+        <input type="radio" name="jk" value="male"
+          class="form-radio h-4 w-4 border border-black rounded-full ext-green-500 mr-2" />
+        Male
+      </label>
+      <label class="inline-flex items-center">
+        <input type="radio" name="jk" value="female"
+          class="form-radio h-4 w-4 border border-black rounded-full ext-green-500 mr-2" />
+        Female
+      </label>
+    </div>
+  </div>
+  <footer class="bg-blue-600 text-white text-center p-4 mt-60">
+    <p>&copy; 2024 D3SI-47-01 All Right Reseverd.</p>
+  </footer>
+</body>
+
+</html>
