@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Multipurpose</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Affiliate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+        </div>
+
+        <!-- Charts -->
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Earnings Breakdown</div>
+              <div class="card-body">
+                <canvas id="earningsChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Monthly Revenue</div>
+              <div class="card-body">
+                <canvas id="revenueChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="card">
+          <div class="card-header">Personnel Management</div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start Date</th>
+                    <th>Salary</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>$320,800</td>
+                    <td><span class="badge bg-primary">Full-time</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-info">Edit</button>
+                      <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <!-- Tambahkan data lainnya -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Contoh script untuk chart.js
+    const ctx1 = document.getElementById('earningsChart').getContext('2d');
+    const earningsChart = new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Mar', 'May', 'Jul', 'Sep', 'Nov'],
+        datasets: [{
+          label: 'Earnings',
+          data: [10000, 20000, 15000, 30000, 25000, 40000],
+          borderColor: 'blue',
+          tension: 0.1
+        }]
+      }
+    });
+
+    const ctx2 = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+          label: 'Revenue',
+          data: [5000, 7000, 10000, 15000, 12000, 20000],
+          backgroundColor: 'blue'
+        }]
+      }
+    });
+  </script>
+</body>
+</html>
